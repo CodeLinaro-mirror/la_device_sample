@@ -1,52 +1,24 @@
 package com.google.android.tv.setup.customizationsample;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.PowerManager;
-import android.view.View;
+import android.view.KeyEvent;
 
 /**
  * A HOOK_POST_NETWORK follow-up Activity, which simulates performing a system upgrade.
  */
 public class HookPostNetworkFollowupActivity extends BaseActivity {
 
-    int mSecondsRemaining;
-    Runnable mRunnable;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Here we pretend to perform a system upgrade.
-        iv0.setVisibility(View.VISIBLE);
-        iv0.setImageResource(R.drawable.download);
-        mRunnable = new Runnable() {
-            @Override
-            public void run() {
-                mSecondsRemaining--;
-                if (mSecondsRemaining >= 0) {
-                    tv3.setText(mSecondsRemaining + " seconds remaining");
-                    new Handler().postDelayed(mRunnable, 1000);
-                } else {
-                    conclude();
-                }
-            }
-        };
-        mSecondsRemaining = 3;
-        mRunnable.run();
-    }
+        showDrawable(R.drawable.download);
 
-    protected void conclude() {
-        if (getIntent().getBooleanExtra("reboot", false)) {
-            log("simulate perform upgrade: simulate upgrade by invoking reboot now");
-            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
-            pm.reboot(null);
-        } else {
-            log("simulate perform upgrade: simulate upgrade halted/failed; return to Setup");
-            setResult(RESULT_OK);
-            finish();
-        }
+        registerKeyHandlerResultCancelledBack();
+        registerKeyHandlerResultCancelledCrashDpadLeft();
+
+        registerKeyHandlerResultOkDpadCenterBoring();
+        registerKeyHandlerResultOk(KeyEvent.KEYCODE_DPAD_RIGHT, "simulate an upgrade by doing a reboot (this is a very weak simulation of an upgrade)");
     }
 }
 

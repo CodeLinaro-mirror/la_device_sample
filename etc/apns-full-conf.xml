@@ -5949,6 +5949,8 @@
       password="mts"
       authtype="1"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="MTS MMS"
@@ -6888,9 +6890,7 @@
       mcc="272"
       mnc="02"
       apn="internet"
-      proxy="62.40.32.40"
-      port="8080"
-      mmsc="http://mmsc.mms.o2.ie:8002"
+      mmsc="http://mmsc.mms.o2.ie:8002/"
       mmsproxy="62.40.32.40"
       mmsport="8080"
       type="default,supl,mms"
@@ -26606,6 +26606,18 @@
       password="ratel"
       authtype="3"
       protocol="IPV4V6"
+      type="default,supl"
+  />
+
+  <apn carrier="Rakuten"
+      carrier_id = "2109"
+      mcc="440"
+      mnc="51"
+      apn="a.rmobile.jp"
+      user="rakuten@vdm"
+      server=""
+      password="0000"
+      authtype="3"
       type="default,supl"
   />
 

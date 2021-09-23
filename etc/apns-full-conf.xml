@@ -734,6 +734,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Telfort Internet"
@@ -979,6 +980,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Mobistar MMS"
@@ -1739,6 +1741,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="NRJ WEB"
@@ -2098,7 +2101,7 @@
   />
 
   <apn carrier="Tuenti"
-      carrier_id = "34"
+      carrier_id = "2357"
       mcc="214"
       mnc="05"
       apn="tuenti.com"
@@ -2108,6 +2111,9 @@
       mmsc="http://tuenti.com"
       mmsproxy="10.138.255.43"
       mmsport="8080"
+      type="default,mms,supl"
+      mvno_type="spn"
+      mvno_match_data="Tuenti"
   />
 
   <apn carrier="INET Roaming"
@@ -2142,6 +2148,40 @@
       type="default,supl"
       mvno_type="gid"
       mvno_match_data="44474954"
+  />
+
+  <apn carrier="Movistar"
+      carrier_id = "34"
+      mcc="214"
+      mnc="05"
+      apn="telefonica.es"
+      user="telefonica"
+      password="telefonica"
+      mmsc="http://mms.movistar.com"
+      mmsproxy="10.138.255.5"
+      mmsport="8080"
+      authtype="1"
+      type="default,supl,mms"
+  />
+
+  <apn carrier="Movistar"
+      carrier_id = "34"
+      mcc="214"
+      mnc="05"
+      apn="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="ims"
+  />
+
+  <apn carrier="Movistar"
+      carrier_id = "34"
+      mcc="214"
+      mnc="05"
+      apn="xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="xcap"
   />
 
   <apn carrier="INTERNET GPRS"
@@ -2327,6 +2367,26 @@
       type="default,supl,mms"
   />
 
+  <apn carrier="Movistar"
+      carrier_id = "34"
+      mcc="214"
+      mnc="07"
+      apn="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="ims"
+  />
+
+  <apn carrier="Movistar"
+      carrier_id = "34"
+      mcc="214"
+      mnc="07"
+      apn="xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      type="xcap"
+  />
+
   <apn carrier="Jazztel Internet"
       carrier_id = "1974"
       mcc="214"
@@ -2351,17 +2411,6 @@
       type="mms"
       mvno_match_data="JAZZTEL"
       mvno_type="spn"
-  />
-
-  <apn carrier="Conexióompartida"
-      carrier_id = "34"
-      mcc="214"
-      mnc="07"
-      apn="movistar.es"
-      authtype="1"
-      user="MOVISTAR"
-      password="MOVISTAR"
-      type="dun"
   />
 
   <apn carrier="T-2"
@@ -2527,6 +2576,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Truphone"
@@ -2550,22 +2600,6 @@
       roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="547275554B3030656E"
-  />
-
-  <apn carrier="Tuenti"
-      carrier_id = "2357"
-      mcc="214"
-      mnc="32"
-      apn="tuenti.com"
-      user="tuenti"
-      password="tuenti"
-      authtype="3"
-      mmsc="http://tuenti.com"
-      mmsproxy="10.138.255.43"
-      mmsport="8080"
-      type="default,mms,supl"
-      mvno_type="spn"
-      mvno_match_data="Tuenti"
   />
 
   <apn carrier="INET Internet"
@@ -3386,6 +3420,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="DIGI Italy"
@@ -3705,6 +3740,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Swisscom MMS"
@@ -3799,6 +3835,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="T-Mobile CZ"
@@ -4059,6 +4096,69 @@
       type="default,supl"
   />
 
+  <apn carrier="0677 web"
+      mcc="232"
+      mnc="07"
+      apn="webaut"
+      type="default,supl"
+      mvno_type="imsi"
+      mvno_match_data="23207718"
+  />
+
+  <apn carrier="0677 mms"
+      mcc="232"
+      mnc="07"
+      apn="mmsaut"
+      mmsc="http://mmsaut.at/send"
+      mmsproxy="212.095.031.050"
+      mmsport="80"
+      type="mms"
+      mvno_type="imsi"
+      mvno_match_data="23207718"
+  />
+
+  <apn carrier="0677 web"
+      mcc="232"
+      mnc="07"
+      apn="webaut"
+      type="default,supl"
+      mvno_type="imsi"
+      mvno_match_data="2320776"
+  />
+
+  <apn carrier="0677 mms"
+      mcc="232"
+      mnc="07"
+      apn="mmsaut"
+      mmsc="http://mmsaut.at/send"
+      mmsproxy="212.095.031.050"
+      mmsport="80"
+      type="mms"
+      mvno_type="imsi"
+      mvno_match_data="2320776"
+  />
+
+  <apn carrier="0677 web"
+      mcc="232"
+      mnc="07"
+      apn="webaut"
+      type="default,supl"
+      mvno_type="imsi"
+      mvno_match_data="23207799"
+  />
+
+  <apn carrier="0677 mms"
+      mcc="232"
+      mnc="07"
+      apn="mmsaut"
+      mmsc="http://mmsaut.at/send"
+      mmsproxy="212.095.031.050"
+      mmsport="80"
+      type="mms"
+      mvno_type="imsi"
+      mvno_match_data="23207799"
+  />
+
   <apn carrier="Lycamobile"
       carrier_id = "2404"
       mcc="232"
@@ -4069,6 +4169,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Planet3"
@@ -4495,6 +4596,7 @@
       password="plus"
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Virgin Media Mobile Internet"
@@ -5094,6 +5196,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Telia SurfPort"
@@ -5508,6 +5611,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Halebop Internet"
@@ -5706,6 +5810,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="DNA Internet"
@@ -6966,6 +7071,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Truphone"
@@ -7266,6 +7372,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Vodafone Net2"
@@ -7332,6 +7439,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="tmn internet"
@@ -7564,6 +7672,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Siminn Internet"
@@ -7926,6 +8035,27 @@
       type="mms"
   />
 
+  <apn carrier="069 web"
+      mcc="293"
+      mnc="40"
+      apn="websi"
+      type="default,supl"
+      mvno_type="imsi"
+      mvno_match_data="293400130"
+  />
+
+  <apn carrier="069 mms"
+      mcc="293"
+      mnc="40"
+      apn="mmssi"
+      mmsc="http://mms.hot.si"
+      mmsproxy="80.95.224.47"
+      mmsport="8080"
+      type="mms"
+      mvno_type="imsi"
+      mvno_match_data="293400130"
+  />
+
  <apn carrier="Mobilni Internet"
       carrier_id = "1710"
       mcc="293"
@@ -8077,6 +8207,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="EMnify"
@@ -10749,6 +10880,37 @@
       type="default,supl"
   />
 
+  <apn carrier="Tracfone AT&amp;T"
+      carrier_id = "10000"
+      mcc="310"
+      mnc="280"
+      apn="ereseller"
+      user=""
+      password=""
+      proxy=""
+      port=""
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="http://proxy.mobile.att.net"
+      mmsport="80"
+      type="default,mms,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      mvno_match_data="DEFF"
+  />
+
+  <apn carrier="Tracfone AT&amp;T"
+      carrier_id = "10000"
+      mcc="310"
+      mnc="280"
+      apn="resellermht"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      mvno_match_data="DEFF"
+  />
+
   <apn carrier="T-Mobile US 300"
       carrier_id = "1"
       mcc="310"
@@ -11224,6 +11386,37 @@
       mmsport="80"
       mvno_type="gid"
       mvno_match_data="ddff"
+  />
+
+  <apn carrier="Tracfone AT&amp;T"
+      carrier_id = "10000"
+      mcc="310"
+      mnc="410"
+      apn="ereseller"
+      user=""
+      password=""
+      proxy=""
+      port=""
+      mmsc="http://mmsc.mobile.att.net"
+      mmsproxy="http://proxy.mobile.att.net"
+      mmsport="80"
+      type="default,mms,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      mvno_match_data="DEFF"
+  />
+
+  <apn carrier="Tracfone AT&amp;T"
+      carrier_id = "10000"
+      mcc="310"
+      mnc="410"
+      apn="resellermht"
+      type="dun"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      mvno_match_data="DEFF"
   />
 
   <apn carrier="CBW Data"
@@ -16168,6 +16361,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="custer"
@@ -29462,6 +29656,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Truphone"
@@ -32449,6 +32644,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Spacetel"
@@ -32980,6 +33176,7 @@
       password=""
       mvno_type="spn"
       mvno_match_data="Lycamobile"
+      type="default,supl"
   />
 
   <apn carrier="Eritel"
@@ -33845,8 +34042,23 @@
     type="default"
     protocol="IPV4V6"
     roaming_protocol="IPV4V6"
-    mvno_type="spn"
-    mvno_match_data="Tuenti"
+    mvno_type="gid"
+    mvno_match_data="02"
+  />
+
+  <apn carrier="Servicio_WEB"
+    carrier_id="2249"
+    mcc="722"
+    mnc="010"
+    apn="internet.movil"
+    user="internet"
+    password="internet"
+    authtype="1"
+    type="default"
+    protocol="IPV4V6"
+    roaming_protocol="IPV4V6"
+    mvno_type="gid"
+    mvno_match_data="01"
   />
 
   <apn carrier="Movistar INTERNET"
@@ -34036,7 +34248,16 @@
       mmsport="8080"
       authtype="1"
       protocol="IPV4V6"
-      type="default,supl,mms"
+      type="default,supl,mms,xcap"
+  />
+
+  <apn carrier="TIM IMS"
+      carrier_id="1385"
+      mcc="724"
+      mnc="02"
+      apn="ims"
+      protocol="IPV6"
+      type="ims"
   />
 
   <apn carrier="TIM Connect"
@@ -34051,7 +34272,16 @@
       mmsport="8080"
       authtype="1"
       protocol="IPV4V6"
-      type="default,supl,mms"
+      type="default,supl,mms,xcap"
+  />
+
+  <apn carrier="TIM IMS"
+      carrier_id="1385"
+      mcc="724"
+      mnc="03"
+      apn="ims"
+      protocol="IPV6"
+      type="ims"
   />
 
   <apn carrier="TIM Connect"
@@ -34066,7 +34296,16 @@
       mmsport="8080"
       authtype="1"
       protocol="IPV4V6"
-      type="default,supl,mms"
+      type="default,supl,mms,xcap"
+  />
+
+  <apn carrier="TIM IMS"
+      carrier_id="1385"
+      mcc="724"
+      mnc="04"
+      apn="ims"
+      protocol="IPV6"
+      type="ims"
   />
 
   <apn carrier="Java Session"
@@ -34640,6 +34879,30 @@
       authtype='0'
       type='default,dun'
       apn='portoconecta.br'
+  />
+
+  <apn carrier="TIM Connect"
+      carrier_id = "1385"
+      mcc="724"
+      mnc="54"
+      apn="timbrasil.br"
+      user="tim"
+      password="tim"
+      mmsc="http://mms.tim.br"
+      mmsproxy="189.40.191.96"
+      mmsport="8080"
+      authtype="1"
+      protocol="IPV4V6"
+      type="default,supl,mms,xcap"
+  />
+
+  <apn carrier="TIM IMS"
+      carrier_id="1385"
+      mcc="724"
+      mnc="54"
+      apn="ims"
+      protocol="IPV6"
+      type="ims"
   />
 
   <apn carrier="Internet Movil"

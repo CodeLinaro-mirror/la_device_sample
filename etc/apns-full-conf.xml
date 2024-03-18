@@ -2726,15 +2726,6 @@
       user_visible="false"
   />
 
-  <apn carrier="Republica Movil Internet"
-      mcc="214"
-      mnc="03"
-      apn="orangeworld"
-      type="default,ia,supl,dun"
-      mvno_match_data="Republica Movil"
-      mvno_type="spn"
-  />
-
  <apn carrier="diainternet"
       mcc="214"
       mnc="03"
@@ -3237,6 +3228,16 @@
       mnc="22"
       apn="internet.digimobil.es"
       type="default,ia,supl"
+  />
+
+  <apn carrier="DIGI Spain IMS"
+      carrier_id="2442"
+      mcc="214"
+      mnc="22"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      user_visible="false"
   />
 
   <apn carrier="Lycamobile"
@@ -4124,6 +4125,16 @@
       mnc="36"
       apn="digi.mobile"
       type="default,ia,supl"
+  />
+
+  <apn carrier="DIGI Italy IMS"
+      carrier_id="2443"
+      mcc="222"
+      mnc="36"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      user_visible="false"
   />
 
   <apn carrier="Iliad"
@@ -9974,8 +9985,8 @@
       mnc="03"
       apn="IMS"
       type="ims"
-      protocol="IPV6"
-      roaming_protocol="IPV6"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -41396,6 +41407,13 @@
       mnc="37"
       apn="mobiledata"
       type="default,ia,supl"
+  />
+
+  <apn carrier="Telekom"
+      mcc="901"
+      mnc="40"
+      apn="internet.m2mportal.de"
+      type="default"
   />
 
   <apn carrier="EMnify"

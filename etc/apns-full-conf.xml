@@ -222,7 +222,7 @@
       mmsproxy="10.10.10.20"
       mmsport="8080"
       type="mms"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
   />
 
   <apn carrier="IMS"
@@ -242,7 +242,7 @@
       mnc="01"
       apn="hos"
       mmsc="http://mmsc.cosmote.gr"
-      mmsproxy="010.010.010.020"
+      mmsproxy="10.10.10.20"
       mmsport="8080"
       type="mms"
       network_type_bitmask="18"
@@ -1501,7 +1501,7 @@
       mmsc="http://mms.orange.fr"
       type="default,supl,xcap,mms,dun"
       protocol="IPV6"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
       user_editable="false"
   />
 
@@ -1719,7 +1719,8 @@
       mcc="208"
       mnc="09"
       apn="pda.newcomobile.com"
-      type="default,ia,supl"
+      mmsc="http://mms.bealiv.com"
+      type="default,ia,supl,mms"
       mvno_match_data="208090021"
       mvno_type="imsi"
   />
@@ -3378,7 +3379,7 @@
       mmsport="8080"
       authtype="1"
       protocol="IPV4V6"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
   />
 
   <apn carrier="Telekom IMS"
@@ -4634,7 +4635,7 @@
       mmsport="80"
       authtype="1"
       type="mms"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
   />
 
   <apn carrier="HOS"
@@ -5094,7 +5095,7 @@
       apn="mmsaut"
       authtype="1"
       mmsc="http://mmsaut.at/send"
-      mmsproxy="212.095.031.050"
+      mmsproxy="212.95.31.50"
       mmsport="80"
       type="mms"
       mvno_type="imsi"
@@ -6295,7 +6296,7 @@
       mmsproxy="185.110.178.97"
       mmsport="9028"
       type="mms"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|19|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
   />
 
   <apn carrier="Sky IMS"
@@ -6570,7 +6571,7 @@
       mmsport="8799"
       type="mms"
       protocol="IPV4V6"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
   />
 
   <apn carrier="3 MMS iWLAN"
@@ -6838,7 +6839,7 @@
       mmsport="8799"
       type="mms"
       protocol="IPV4V6"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|19|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
   />
 
   <apn carrier="3 MMS iWLAN"
@@ -7077,7 +7078,7 @@
       mmsport="9028"
       mmsc="http://185.110.178.96:38090/was"
       type="mms"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|19|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
       mvno_match_data="0C"
       mvno_type="gid"
   />
@@ -8749,6 +8750,7 @@
       mnc="03"
       apn="hos"
       type="xcap"
+      protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -10527,6 +10529,33 @@
       mmsproxy="10.112.222.37"
       mmsport="8080"
       type="mms"
+  />
+
+  <apn carrier="Tuullik MMS"
+      mnc="03"
+      mcc="290"
+      apn="mms"
+      mmsc="http://mms.mobile.tuullik.gl:8002"
+      mmsproxy="proxy.mobile.tuullik.gl"
+      mmsport="8080"
+      type="mms"
+      user_editable="false"
+  />
+
+  <apn carrier="Tuullik Internet"
+      mnc="03"
+      mcc="290"
+      apn="internet"
+      type="default,ia,supl"
+  />
+
+  <apn carrier="Tuullik IMS"
+      mnc="03"
+      mcc="290"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      user_visible="false"
   />
 
   <apn carrier="Si.mobil GPRS"
@@ -12599,7 +12628,7 @@
       mmsproxy="68.28.31.7"
       mmsport="80"
       type="default,ia,supl,mms,dun"
-      network_type_bitmask="1|2|3|8|9|10|15|16"
+      network_type_bitmask="1|2|3|8|9|10|15"
   />
 
   <apn carrier="Carolina West Internet"
@@ -21409,6 +21438,42 @@
       type='mms'
   />
 
+  <apn carrier="SETAR Internet"
+      carrier_id = "493"
+      mcc="363"
+      mnc="01"
+      apn="internet.setar.aw"
+      type="default,fota,supl,xcap"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="true"
+  />
+
+  <apn carrier="SETAR MMS"
+      carrier_id = "493"
+      mcc="363"
+      mnc="01"
+      apn="mms.setar.aw"
+      type="mms"
+      mmsc="http://mms.setar.aw"
+      mmsproxy="201.229.65.204"
+      mmsport="8081"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="false"
+  />
+
+  <apn carrier="SETAR IMS"
+      carrier_id = "493"
+      mcc="363"
+      mnc="01"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_visible="false"
+  />
+
   <apn carrier="INTERNET Aruba"
       carrier_id = "2163"
       mcc="363"
@@ -21439,7 +21504,8 @@
       mcc="364"
       mnc="49"
       apn="pda.newcomobile.com"
-      type="default,ia,supl"
+      mmsc="http://mms.bealiv.com"
+      type="default,ia,supl,mms"
   />
 
   <apn carrier="Be Aliv IMS"
@@ -31490,6 +31556,16 @@
       user_visible="false"
   />
 
+  <apn carrier="Webbing"
+      mcc="424"
+      mnc="02"
+      apn="wbdata"
+      type="default,ia,dun"
+      protocol="IPV4V6"
+      mvno_type="gid"
+      mvno_match_data="536E617065"
+  />
+
   <apn carrier="du LTE"
       carrier_id = "1970"
       mcc="424"
@@ -32327,6 +32403,18 @@
       type="default,supl"
       protocol="IP"
       roaming_protocol="IP"
+  />
+
+  <apn carrier="TONE mobile"
+      mcc="440"
+      mnc="10"
+      apn="tone.ne.jp"
+      type="default"
+      user="tone"
+      password="tone"
+      authtype="2"
+      mvno_type="spn"
+      mvno_match_data="docomo"
   />
 
   <apn carrier="楽天(rakuten.jp)"
@@ -36507,7 +36595,7 @@
       type="xcap"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
+      network_type_bitmask="1|2|3|4|5|6|7|8|9|10|12|13|14|15|17|20"
       user_visible="false"
   />
 

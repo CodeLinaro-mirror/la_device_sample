@@ -39323,6 +39323,28 @@
       type="ims"
   />
 
+  <apn carrier="Brisanet"
+      carrier_id="2659"
+      mcc="724"
+      mnc="77"
+      apn="brisanet"
+      type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      authtype="0"
+  />
+
+  <apn carrier="Brisanet IMS"
+      carrier_id="2659"
+      mcc="724"
+      mnc="77"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      authtype="0"
+  />
+
   <apn carrier="Internet Movil"
       carrier_id = "1427"
       mcc="730"
@@ -39435,7 +39457,7 @@
       user_editable="false"
   />
 
-  <apn carrier="IMS"
+  <apn carrier="IMS WOM"
       carrier_id="1430"
       mcc="730"
       mnc="09"
@@ -39443,8 +39465,8 @@
       type="ims"
       user=""
       password=""
-      protocol="IP"
-      roaming_protocol="IP"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       user_editable="false"
       user_visible="false"
   />
